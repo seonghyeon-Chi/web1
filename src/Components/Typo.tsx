@@ -6,6 +6,7 @@ type TypoProps = {
   fWeight: string;
   fColor?: string;
   lHeight: string;
+  opacity?: string;
   children?: string | never[];
 }
 
@@ -14,6 +15,7 @@ const TypoStyle = styled.span<TypoProps>`
   font-weight: ${props => props.fWeight};
   line-height: ${props => props.lHeight};
   color: ${props => props.fColor};
+  opacity: ${props => props.opacity};
 `
 
 export const Typo = (props: TypoProps) => {

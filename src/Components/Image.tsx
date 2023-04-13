@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 type ImageProps = {
   alt: string;
-  src: string;
+  src?: string;
   height: string;
   radius?: string;
 }
@@ -13,6 +13,7 @@ const ImageStyle = styled.img.attrs<ImageProps>(props => {
   src: props.src || 'isNotSrc';
 })<ImageProps>`
   height: ${props => props.height};
+  width: auto;
   border-radius: ${props => props.radius ? props.radius : null};
 `
 

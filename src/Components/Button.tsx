@@ -11,6 +11,7 @@ type ButtonProps = {
   size: 'lg' | 'md' | 'sm' | 'xs'
   direction: 'left' | 'right'
   jenre: 'primary' | 'secondary'
+  src?: string;
   children?: string | never[];
 }
 
@@ -76,8 +77,8 @@ export const Button = (props: ButtonProps) => {
     {props.direction === 'left'
     ? <ButtonWrap {...btnState} jenre={jenre}>
       <MrContainer size={props.children ? size === 'lg' || size === 'md' ? '8px' : '4px' : '0px'} width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"}>
-        {props.jenre === 'primary' ? <Icon src={searchIcon} alt="searchIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />
-        : <Icon src={searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />}
+        {props.jenre === 'primary' ? <Icon src={props.src ? props.src : searchIcon} alt="searchIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />
+        : <Icon src={props.src ? props.src : searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />}
       </MrContainer>
       <Typo fSize={btnState.fSize} fWeight={btnState.fWeight} lHeight={btnState.fSize}>
         {children}
@@ -88,8 +89,8 @@ export const Button = (props: ButtonProps) => {
         {children}
       </Typo>
       <MlContainer size={props.children ? size === 'lg' || size === 'md' ? '8px' : '4px' : '0px'} width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"}>
-        {props.jenre === 'primary' ? <Icon src={searchIcon} alt="searchIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />
-        : <Icon src={searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />}
+        {props.jenre === 'primary' ? <Icon src={props.src ? props.src : searchIcon} alt="searchIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />
+        : <Icon src={props.src ? props.src : searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />}
       </MlContainer>
     </ButtonWrap>}
     </>

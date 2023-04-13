@@ -12,6 +12,7 @@ export const LightTheme = {
     fs2: '24px',
     fs3: '18px',
     fs4: '16px',
-    fs5: '14px'
+    fs5: '14px',
+    fs6: '12px'
   }
 }

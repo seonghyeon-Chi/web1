@@ -9,18 +9,20 @@ type FormsProps = {
   id?: string;
   label?: string;
   content?: string;
+  width?: string;
+  src?: string;
 }
 
-const Form = styled.form`
+const Form = styled.form<FormsProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 16px;
   gap: 16px;
-  max-width: 268px;
   max-height: 72px;
   background: #fff;
   border-radius: 12px;
+  width: ${props => props.width};
 `
 
 const ContentWrap = styled.span`
@@ -29,7 +31,8 @@ const ContentWrap = styled.span`
   justify-content: center;
   align-items: flex-start;
   height: 40px;
-  width: 98px;
+  max-width: 200px;
+  word-break: break-all;
 `
 
 const Label = styled.label.attrs(props => {
@@ -45,8 +48,8 @@ export const Forms = (props: FormsProps) => {
   const context = React.useContext(GlobalContext)
 
   return (
-    <Form>
-      <Icon src={formDefIcon} alt="fromDefIcon" height="24px" width="24px"></Icon>
+    <Form width={props.width}>
+      <Icon src={props.src ? props.src : formDefIcon} alt="fromDefIcon" height="24px" width="24px"></Icon>
       <ContentWrap>
         <Label>
           <Typo fSize={context.font.fs5} fWeight='400' lHeight="20px">{props.label ? props.label : 'label'}</Typo>
