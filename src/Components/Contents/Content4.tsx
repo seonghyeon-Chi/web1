@@ -15,11 +15,11 @@ export const Content4 = (props: Content4Props) => {
 
   return (
     <ContentContainer gap="8px" width="320px">
-      <ImageWrap width="320px" height="380px">
+      <ImageWrap width="316px" height="380px">
         {props.src ? <Image src={props.src} alt="thumbnail" height="380px" />: null}
       </ImageWrap>
       <ContentWrap height="44px">
-        <Typo fSize={context.font.fs4} fWeight="500" lHeight="24px">{"name"}</Typo>
+        <Typo fSize={context.font.fs4} fWeight="500" lHeight="24px">{props.name? props.name : "name"}</Typo>
       </ContentWrap>
     </ContentContainer>
   )

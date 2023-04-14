@@ -6,6 +6,7 @@ export const LightTheme = {
     black: '#161414',
     pupple: '#9747FF',
     white: '#ffffff',
+    gray2: '#5b5b5b'
   },
   font: {
     fs1: '32px',

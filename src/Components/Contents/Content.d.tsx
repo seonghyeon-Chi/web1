@@ -12,6 +12,10 @@ export const ContentContainer = styled.div<ContentContainerProps>`
   background-color: #fff;
   gap: ${props => props.gap};
   width: ${props => props.width};
+
+  &&:hover {
+    cursor: pointer;
+  }
 `
 
 type ImageWrapProps = {

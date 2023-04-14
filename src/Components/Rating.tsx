@@ -37,8 +37,8 @@ export const Rating = (props: RatingProps) => {
   return (
     <RatingWrap left={props.left} top={props.top}>
       {array.map((item, idx) => (
-        item ? <Icon src={starFillIcon} alt="starFillIcon" width="16px" height="16px" /> 
-        : <Icon src={starLineIcon} alt="starLineIcon" width="16px" height="16px" />
+        item ? <Icon key={idx} src={starFillIcon} alt="starFillIcon" width="16px" height="16px" /> 
+        : <Icon key={idx} src={starLineIcon} alt="starLineIcon" width="16px" height="16px" />
       ))}
     </RatingWrap>
   )

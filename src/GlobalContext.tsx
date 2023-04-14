@@ -8,6 +8,7 @@ const GlobalContext = React.createContext({
     black: '#161414',
     pupple: '#9747FF',
     white: '#ffffff',
+    gary2: '#5b5b5b'
   },
   font: {
     fs1: '32px',

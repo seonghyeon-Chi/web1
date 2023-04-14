@@ -32,6 +32,10 @@ const ButtonWrap = styled.button.attrs(props => {
   color: ${props => props.jenre === 'primary' ? props.theme.color.white : props.theme.color.def};
   border-radius: 12px;
   border: none;
+
+  &&:hover {
+    cursor: pointer;
+  }
 `
 
 export const Button = (props: ButtonProps) => {

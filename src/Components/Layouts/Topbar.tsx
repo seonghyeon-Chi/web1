@@ -30,6 +30,10 @@ const MenuItem = styled.span`
   padding: 0px 24px;
   gap: 4px;
   height: 20px;  
+
+  &&:hover {
+    cursor: pointer;
+  }
 `
 
 export const Topbar = () => {

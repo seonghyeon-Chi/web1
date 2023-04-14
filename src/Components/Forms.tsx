@@ -9,6 +9,7 @@ type FormsProps = {
   id?: string;
   label?: string;
   content?: string;
+  contents?: Array<string>;
   width?: string;
   src?: string;
 }
@@ -52,9 +53,10 @@ export const Forms = (props: FormsProps) => {
       <Icon src={props.src ? props.src : formDefIcon} alt="fromDefIcon" height="24px" width="24px"></Icon>
       <ContentWrap>
         <Label>
-          <Typo fSize={context.font.fs5} fWeight='400' lHeight="20px">{props.label ? props.label : 'label'}</Typo>
+          <Typo fSize={context.font.fs5} fWeight='400' lHeight="20px">{props.label ? props.label : ''}</Typo>
         </Label>
         <Typo fSize={context.font.fs4} fWeight='500' lHeight="24px">{props.content ? props.content : ''}</Typo>
+        {props.contents ? props.contents.map((item, idx) => (<Typo key={idx} fSize={context.font.fs4} fWeight='500' lHeight="24px">{item ? item : ''}</Typo>)): null}
       </ContentWrap>
     </Form>
   )

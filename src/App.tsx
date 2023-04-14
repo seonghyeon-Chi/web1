@@ -10,6 +10,9 @@ import { Content3 } from './Components/Contents/Content3';
 import { Content4 } from './Components/Contents/Content4';
 import { Footer } from './Components/Layouts/Footer';
 import { Topbar } from './Components/Layouts/Topbar';
+import { Searchbar } from './Components/Searchbar';
+import { Header } from './Components/Layouts/Header';
+import Home from './Page/Home/Home';
 
 
 function App() {
@@ -18,9 +21,8 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <Topbar />
-      </header>
+      <Header />
+      <Home />
       <Footer />
     </div>
   )
