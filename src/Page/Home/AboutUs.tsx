@@ -5,7 +5,7 @@ import GlobalContext from '../../GlobalContext';
 import { Button } from '../../Components/Button';
 import allowIcon from '../../assets/icon-allow-right-primary.svg'
 import { Image } from '../../Components/Image';
-import defImage from './sample_image/image-section4-def.svg'
+import defImage from './sample_image/image-section5-def.svg'
 
 const AboutUsContainer = styled.div`
   display: flex;

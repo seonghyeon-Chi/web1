@@ -73,9 +73,27 @@ export const Section3 = () => {
   )
 }
 
-import { AboutUs } from './AboutUs';
+import { Content3 } from '../../Components/Contents/Content3';
+import def1S4Image from './sample_image/image-section4-def1.svg'
+import def2S4Image from './sample_image/image-section4-def2.svg'
 
 export const Section4 = () => {
+  return (
+    <SectionContainer>
+      <SectionWrap height="492px">
+        <Title isButton>Travel Tips and Advice</Title>
+        <SectionContentWrap height="380px">
+          <Content3 src={def1S4Image} title="East Village Ice Cream Crawl" content="We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind the business and see what makes the ice cream unique as you savor every…" date="today" user="Maria Philips" comments="2" />
+          <Content3 src={def2S4Image} title="Brooklyn Bridge cinematic photo walk" content="This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to capture clients at different locations upon request for an additional charge." date="today" user="James Calzoni" comments="17" />
+        </SectionContentWrap>
+      </SectionWrap>
+    </SectionContainer>
+  )
+}
+
+import { AboutUs } from './AboutUs';
+
+export const Section5 = () => {
   return (
     <SectionContainer>
       <AboutUs />

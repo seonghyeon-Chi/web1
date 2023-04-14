@@ -11,6 +11,8 @@ import { ContentContainer, ImageWrap, ContentWrap } from './Content.d';
 
 interface Content3Props {
   src?: string;
+  title?: string;
+  content?: string;
   date?: string;
   user?: string;
   comments?: string;
@@ -82,11 +84,11 @@ export const Content3 = (props: Content3Props) => {
         <ContentTextWrap>
           <ContentTitle>
             <Typo fSize={context.font.fs1} fWeight="600" fColor={context.color.black} lHeight="36px">
-              East Village Ice Cream Crawl
+              {props.title}
             </Typo>
           </ContentTitle>
           <ContentText fSize={context.font.fs4} fWeight="400" fColor={context.color.gray} lHeight="24px">
-            We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind the business and see what makes the ice cream unique as you savor every…
+            {props.content}
           </ContentText>
         </ContentTextWrap>
         <PostContainer>
