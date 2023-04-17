@@ -10,6 +10,12 @@
 ## 구현 내용
 
 ### 1.반응형 웹페이지
+#### 작은 사이즈
+![ex_screenshot](./readme-img/sm.png)
+#### 중간 사이즈
+![ex_screenshot](./readme-img/md.png)
+#### 큰 사이즈
+![ex_screenshot](./readme-img/lg.png)
 
 <br />
 <br />
