@@ -8,8 +8,8 @@ export const SectionContainer = styled.div<SectionContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: ${props => props.first ? '120px 0px' : '0px 0px 120px'};
-  gap: 10px;
+  padding: ${props => props.first ? '7.5em 0px' : '0px 0px 7.5em'};
+  gap: 0.625em;
 `
 
 interface SectionWrapProps {
@@ -21,7 +21,7 @@ export const SectionWrap = styled.div<SectionWrapProps>`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: ${props => props.fourth ? '1128px' : '1360px'};
+  width: ${props => props.fourth ? '70.5em' : '85em'};
   height: ${props => props.height};
 `
 
@@ -29,6 +29,6 @@ export const SectionContentWrap = styled.div<SectionWrapProps>`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 32px;
+  gap: 2em;
   height: ${props => props.height};
 `

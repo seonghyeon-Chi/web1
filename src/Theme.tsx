@@ -9,11 +9,11 @@ export const LightTheme = {
     gray2: '#5b5b5b'
   },
   font: {
-    fs1: '32px',
-    fs2: '24px',
-    fs3: '18px',
-    fs4: '16px',
-    fs5: '14px',
-    fs6: '12px'
+    fs1: '2em',
+    fs2: '1.5em',
+    fs3: '1.125em',
+    fs4: '1em',
+    fs5: '0.875em',
+    fs6: '0.75em'
   }
 }

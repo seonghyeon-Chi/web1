@@ -19,11 +19,11 @@ const SubContentWrap = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 4px;
+  gap: 0.25em;
 `
 
 const LocationWrap = styled(SubContentWrap)`
-  width: 224px;
+  width: 14em;
   color: ${props => props.theme.color.gray};
 `
 
@@ -31,16 +31,16 @@ export const Content1 = (props: Content1Props) => {
   const context = React.useContext(GlobalContext)
 
   return (
-    <ContentContainer gap="10px" width="316px">
-      <ImageWrap width="316px" height="380px">
-        {props.src ? <Image src={props.src} radius="12px" alt="thumbnail" height="380px" /> : null}
+    <ContentContainer gap="0.625em" width="19.750em">
+      <ImageWrap width="19.750em" height="23.750em">
+        {props.src ? <Image src={props.src} radius="0.75em" alt="thumbnail" height="23.750em" /> : null}
       </ImageWrap>
-      <ContentWrap gap="12px" height="56px">
-        <Typo fSize={context.font.fs4} fWeight="500" lHeight="24px">{props.title ? props.title : "Monastero Santa Rosa Hotel & Spa"}</Typo>
+      <ContentWrap gap="0.750em" height="3.5em">
+        <Typo fSize={context.font.fs4} fWeight="500" lHeight="1.5em">{props.title ? props.title : "Monastero Santa Rosa Hotel & Spa"}</Typo>
         <SubContentWrap>
           <LocationWrap>
-            <Icon src={locationIcon} alt="locationIcon" width="16px" height="16px" />
-            <Typo fSize={context.font.fs5} fWeight="400" lHeight="20px">{props.map ? props.map : 'Salerno, Italy'}</Typo>
+            <Icon src={locationIcon} alt="locationIcon" width="1em" height="1em" />
+            <Typo fSize={context.font.fs5} fWeight="400" lHeight="1.25em">{props.map ? props.map : 'Salerno, Italy'}</Typo>
           </LocationWrap>
           <Rating rating={props.rating} />
         </SubContentWrap>

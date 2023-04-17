@@ -19,10 +19,10 @@ const RatingWrap = styled.span<RatingStyleProps>`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 2px;
+  gap: 0.125em;
   position: ${props => props.left || props.top ? 'absolute' : null};
-  width: 88px;
-  height: 16px;
+  width: 5.5em;
+  height: 1em;
   left: ${props => props.left};
   top: ${props => props.top};
 `
@@ -37,8 +37,8 @@ export const Rating = (props: RatingProps) => {
   return (
     <RatingWrap left={props.left} top={props.top}>
       {array.map((item, idx) => (
-        item ? <Icon key={idx} src={starFillIcon} alt="starFillIcon" width="16px" height="16px" /> 
-        : <Icon key={idx} src={starLineIcon} alt="starLineIcon" width="16px" height="16px" />
+        item ? <Icon key={idx} src={starFillIcon} alt="starFillIcon" width="1em" height="1em" /> 
+        : <Icon key={idx} src={starLineIcon} alt="starLineIcon" width="1em" height="1em" />
       ))}
     </RatingWrap>
   )

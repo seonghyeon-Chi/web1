@@ -29,7 +29,7 @@ export const ImageWrap = styled.div<ImageWrapProps>`
   width: ${props => props.width};
   height: ${props => props.height};
   background: ${props => props.src ? '#fff' : props.theme.color.gray};
-  border-radius: ${props => props.radius ? props.radius : '12px'};
+  border-radius: ${props => props.radius ? props.radius : '0.75em'};
 `
 
 type ContentWrapProps = {

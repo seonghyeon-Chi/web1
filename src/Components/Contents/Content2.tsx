@@ -15,13 +15,13 @@ export const Content2 = (props: Content2Props) => {
   const context = React.useContext(GlobalContext)
 
   return (
-    <ContentContainer gap="8px" width="200px">
-      <ImageWrap width="200px" height="180px">
-        {props.src ? <Image src={props.src} radius="12px" alt="thumbnail" height="180px" /> : null}
+    <ContentContainer gap="0.5em" width="12.5em">
+      <ImageWrap width="12.5em" height="11.25em">
+        {props.src ? <Image src={props.src} radius="12px" alt="thumbnail" height="11.25em" /> : null}
       </ImageWrap>
-      <ContentWrap height="44px">
-        <Typo fSize={context.font.fs4} fWeight="500" lHeight="24px">{props.name ? props.name : "name"}</Typo>
-        <Typo fSize={context.font.fs5} fWeight="400" fColor={context.color.gray} lHeight="20px">{props.where? props.where : "Where"}</Typo>
+      <ContentWrap height="2.75em">
+        <Typo fSize={context.font.fs4} fWeight="500" lHeight="1.5em">{props.name ? props.name : "name"}</Typo>
+        <Typo fSize={context.font.fs5} fWeight="400" fColor={context.color.gray} lHeight="1.25em">{props.where? props.where : "Where"}</Typo>
       </ContentWrap>
     </ContentContainer>
   )

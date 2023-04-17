@@ -51,25 +51,25 @@ export const Button = (props: ButtonProps) => {
   React.useEffect(() => {
     if (props.size === 'lg') {
       setBtnState({
-        padding: '24px',
+        padding: '1.5em',
         fSize: context.font.fs3,
         fWeight: '500'
       })
     } else if (props.size === 'md') {
       setBtnState({
-        padding: '18px',
+        padding: '1.125em',
         fSize: context.font.fs3,
         fWeight: '500'
       })
     } else if (props.size === 'sm') {
       setBtnState({
-        padding: '12px',
+        padding: '0.75em',
         fSize: context.font.fs3,
         fWeight: '400'
       })
     } else if (props.size === 'xs') {
       setBtnState({
-        padding: '10px',
+        padding: '0.625em',
         fSize: context.font.fs4,
         fWeight: '400'
       })
@@ -80,9 +80,9 @@ export const Button = (props: ButtonProps) => {
     <>
     {props.direction === 'left'
     ? <ButtonWrap {...btnState} jenre={jenre}>
-      <MrContainer size={props.children ? size === 'lg' || size === 'md' ? '8px' : '4px' : '0px'} width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"}>
-        {props.jenre === 'primary' ? <Icon src={props.src ? props.src : searchIcon} alt="searchIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />
-        : <Icon src={props.src ? props.src : searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />}
+      <MrContainer size={props.children ? size === 'lg' || size === 'md' ? '0.5em' : '0.25em' : '0px'} width={props.size === 'xs' ? "1,25em" : "1.5em"} height={props.size === 'xs' ? "1.25em" : "1.5em"}>
+        {props.jenre === 'primary' ? <Icon src={props.src ? props.src : searchIcon} alt="searchIcon" width={props.size === 'xs' ? "1.25em" : "1.5em"} height={props.size === 'xs' ? "1.25em" : "1.5em"} />
+        : <Icon src={props.src ? props.src : searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "1.25em" : "1.5em"} height={props.size === 'xs' ? "1.25em" : "1.5em"} />}
       </MrContainer>
       <Typo fSize={btnState.fSize} fWeight={btnState.fWeight} lHeight={btnState.fSize}>
         {children}
@@ -92,9 +92,9 @@ export const Button = (props: ButtonProps) => {
       <Typo fSize={btnState.fSize} fWeight={btnState.fWeight} lHeight={btnState.fSize}>
         {children}
       </Typo>
-      <MlContainer size={props.children ? size === 'lg' || size === 'md' ? '8px' : '4px' : '0px'} width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"}>
-        {props.jenre === 'primary' ? <Icon src={props.src ? props.src : searchIcon} alt="searchIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />
-        : <Icon src={props.src ? props.src : searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "20px" : "24px"} height={props.size === 'xs' ? "20px" : "24px"} />}
+      <MlContainer size={props.children ? size === 'lg' || size === 'md' ? '0.5em' : '0.25em' : '0px'} width={props.size === 'xs' ? "1.25em" : "1.5em"} height={props.size === 'xs' ? "1.25em" : "1.5em"}>
+        {props.jenre === 'primary' ? <Icon src={props.src ? props.src : searchIcon} alt="searchIcon" width={props.size === 'xs' ? "1.25em" : "1.5em"} height={props.size === 'xs' ? "1.25em" : "1.5em"} />
+        : <Icon src={props.src ? props.src : searchMuteIcon} alt="searchMuteIcon" width={props.size === 'xs' ? "1.25em" : "1.5em"} height={props.size === 'xs' ? "1.25em" : "1.5em"} />}
       </MlContainer>
     </ButtonWrap>}
     </>

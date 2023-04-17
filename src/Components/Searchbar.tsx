@@ -13,9 +13,9 @@ const SearchbarContainer = styled.div`
   position: relative;
   flex-direction: row;
   align-items: center;
-  padding: 8px;
-  width: 1142px;
-  height: 88px;
+  padding: 0.5em;
+  width: 71.375em;
+  height: 5.5em;
   background: #fff;
   border-radius: 12px;
 `
@@ -25,10 +25,10 @@ const dommy = ['Explore', 'nearby', 'destinations']
 export const Searchbar = () => {
   return (
     <SearchbarContainer>
-      <Forms src={locationIcon} label="" contents={dommy} width="300px"></Forms>
-      <Forms src={cicleIcon} label="Activity" content="All Activites" width="255.33px" />
-      <Forms src={calendarIcon} label="When" content="Choose a Date" width="255.33px" />
-      <Forms src={guestsIcon} label="Guests" content="1 guest" width="255.33px" />
+      <Forms src={locationIcon} label="" contents={dommy} width="18.75em"></Forms>
+      <Forms src={cicleIcon} label="Activity" content="All Activites" width="15.95em" />
+      <Forms src={calendarIcon} label="When" content="Choose a Date" width="15.95em" />
+      <Forms src={guestsIcon} label="Guests" content="1 guest" width="15.95em" />
       <Button jenre="primary" size="md" direction="left" />
     </SearchbarContainer>
   )

@@ -6,14 +6,14 @@ interface DividerProps {
 }
 
 const DividerWrap = styled.span<DividerProps>`
-  width: ${props => props.direction === 'vertical' ? '0px' : '46px'};
-  height: ${props => props.direction === 'vertical' ? '46px' : '1px'};
+  width: ${props => props.direction === 'vertical' ? '0px' : '2.875em'};
+  height: ${props => props.direction === 'vertical' ? '2.875em' : '1px'};
 `
 
 const VerticalDividerStyle = styled.span`
   position: absolute;
-  width: 46px;
-  left: calc(50% - 46px/2 + 23px);
+  width: 2.875em;
+  left: calc(50% - 2.875em/2 + 1.438em);
   top: 0%;
   bottom: 100%;
   border: 1px solid #e5e5e5;

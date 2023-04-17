@@ -11,23 +11,23 @@ const AboutUsContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 32px;
-  width: 1128px;
-  height: 488px;
+  gap: 2em;
+  width: 70.5em;
+  height: 30.5em;
 `
 
 const ContentWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
-  width: 548px;
-  height: 312px;
+  gap: 2em;
+  width: 34.25em;
+  height: 19.5em;
 `
 
 const ImageWrap = styled.div`
-  width: 548px;
-  height: 488px;
+  width: 34.25em;
+  height: 30.5em;
 `
 
 export const AboutUs = () => {
@@ -35,16 +35,16 @@ export const AboutUs = () => {
   return (
     <AboutUsContainer>
       <ContentWrap>
-        <Typo fSize={context.font.fs1} fWeight="600" fColor={context.color.black} lHeight="32px">
+        <Typo fSize={context.font.fs1} fWeight="600" fColor={context.color.black} lHeight="2em">
           About Us
         </Typo>
-        <Typo fSize={context.font.fs4} fWeight="400" fColor={context.color.gary2} lHeight="32px">
+        <Typo fSize={context.font.fs4} fWeight="400" fColor={context.color.gary2} lHeight="2em">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo. Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
         </Typo>
         <Button src={allowIcon} jenre="secondary" direction="right" size="xs">Read more</Button>
       </ContentWrap>
       <ImageWrap>
-        <Image src={defImage} alt="defImage" height="488px" radius="24px"/>
+        <Image src={defImage} alt="defImage" height="30.5em" radius="1.5em"/>
       </ImageWrap>
     </AboutUsContainer>
   )

@@ -14,8 +14,8 @@ const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 0px 64px;
-  height: 112px;
+  padding: 0px 0px 4em;
+  height: 7em;
   width: inherit;
 `
 
@@ -28,7 +28,7 @@ export const Title = ({ children, isButton }: TitleProps) => {
   return (
     <TitleContainer>
       <TitleWrap>
-        <Typo fSize={context.font.fs1} fWeight="600" fColor={context.color.black} lHeight="48px">
+        <Typo fSize={context.font.fs1} fWeight="600" fColor={context.color.black} lHeight="3em">
           {children}
         </Typo>
       </TitleWrap>

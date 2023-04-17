@@ -14,12 +14,12 @@ export const Content4 = (props: Content4Props) => {
   const context = React.useContext(GlobalContext)
 
   return (
-    <ContentContainer gap="8px" width="320px">
-      <ImageWrap width="316px" height="380px">
-        {props.src ? <Image src={props.src} alt="thumbnail" height="380px" />: null}
+    <ContentContainer gap="0.5em" width="20em">
+      <ImageWrap width="19.750em" height="23.750em">
+        {props.src ? <Image src={props.src} alt="thumbnail" height="23.74em" />: null}
       </ImageWrap>
-      <ContentWrap height="44px">
-        <Typo fSize={context.font.fs4} fWeight="500" lHeight="24px">{props.name? props.name : "name"}</Typo>
+      <ContentWrap height="2.750em">
+        <Typo fSize={context.font.fs4} fWeight="500" lHeight="1.5em">{props.name? props.name : "name"}</Typo>
       </ContentWrap>
     </ContentContainer>
   )
